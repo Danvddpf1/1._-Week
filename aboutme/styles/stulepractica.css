@@ -1,0 +1,75 @@
+
+/* si usamos el de google seria así
+@import url(https://fonts.google.com/specimen/Aref+Ruqaa+Ink);*/
+
+/*si imnportamos de nuestro disco sería así*/
+@font-face {
+    font-family: "Aref Ruqaa ink";
+    src: url(Aref_Ruqaa_Ink/ArefRuqaaInk-Bold.ttf);
+}
+
+/*aca el back ground es la propiedad y el color el lightblue*/
+/*usando un ejemplo sería así*/
+body {
+    padding: 10px; /*Padding quiere decir relleno.*/
+    background-color: lightblue;
+    font-family: "Aref Ruqaa Ink", Bold;
+}
+
+/*En este caso H1 es el header 
+y con esto quiere decir que el color es navy azuk
+el tamaño de la letra es de 30
+el margen de 35
+y el texto alineado en el medio
+Hay propiedades y luego valores*/
+
+/*UN SUPER DATASO
+hay 3 tipos de "precedence" cuando se trata de la prioridad activar los codigos
+
+INLINE (ANULA EMBEDDED) que es el que está en la linea de codigo, ejemplo: 
+<body style = "background-color:lightblue">
+
+EMBEDDED (ANULA EXTERNAL) qye estpa debtro, ejemplo
+<head>
+    <style>
+        body{
+            background-color:lightblue
+            }
+    <style>
+<head>
+
+EXTERNAL (Pese a que es la ultimna en aplicarse, es la que más usaremos) que esta solito, ejemplo
+body{
+    background-color:lightblue
+}
+
+Y si luego hay otro body external, quedarán anulado los viejos y se colocará el nuevo
+*/
+
+h1{
+    color: navy;
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    border: 2px solid black;
+    padding: 5px; /*Padding quiere decir relleno.*/
+    background-image: linear-gradient(gray, white);
+}
+p {
+    font-size: 1.em;
+    margin-top: 35.px;
+    line-height: 1.5em;
+
+}
+img {
+    width: 100%;
+
+}
+di {
+    text-align: center;
+}
